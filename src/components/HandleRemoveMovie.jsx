@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Button } from "react-bootstrap";
 
 const HandleRemoveMovie = ({ imdbID, movieWishList, setMovieWishList }) => {
@@ -12,7 +13,7 @@ const HandleRemoveMovie = ({ imdbID, movieWishList, setMovieWishList }) => {
   };
 
   return (
-    <Button variant="danger" onClick={handleOnClick} >
+    <Button variant="danger" onClick={handleOnClick}>
       Remove
     </Button>
   );

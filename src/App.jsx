@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Col, Container, Row } from "react-bootstrap";
 import "./App.css";
 import Header from "./components/Header";
@@ -32,6 +33,7 @@ function App(props) {
         <Col xs={9}>
           <MovieWishList
             movieWishList={movieWishList}
+            setMovieWishList={setMovieWishList}
             handleOnClick={handleOnClick}
           />
         </Col>

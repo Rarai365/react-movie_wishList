@@ -28,7 +28,12 @@ const MovieWishList = (props) => {
             {movieWishList.map((movie) => (
               <Col key={movie.imdbID} className="mb-4">
                 <MovieCard movie={movie} />
-                <HandleRemoveMovie handleOnClick={handleOnClick} />
+                <HandleRemoveMovie
+                  movieWishList={movieWishList}
+                  setMovieWishList={setMovieWishList}
+                  handleOnClick={handleOnClick}
+                  imdbID={movie.imdbID}
+                />
               </Col>
             ))}
           </Row>
@@ -38,6 +43,12 @@ const MovieWishList = (props) => {
             {actionMovies.map((movie) => (
               <Col key={movie.imdbID} className="mb-4">
                 <MovieCard movie={movie} />
+                <HandleRemoveMovie
+                  movieWishList={movieWishList}
+                  setMovieWishList={setMovieWishList}
+                  handleOnClick={handleOnClick}
+                  imdbID={movie.imdbID}
+                />
               </Col>
             ))}
           </Row>
@@ -47,6 +58,12 @@ const MovieWishList = (props) => {
             {comedyMovies.map((movie) => (
               <Col key={movie.imdbID} className="mb-4">
                 <MovieCard movie={movie} />
+                <HandleRemoveMovie
+                  movieWishList={movieWishList}
+                  setMovieWishList={setMovieWishList}
+                  handleOnClick={handleOnClick}
+                  imdbID={movie.imdbID}
+                />
               </Col>
             ))}
           </Row>
@@ -56,6 +73,12 @@ const MovieWishList = (props) => {
             {sifiMovies.map((movie) => (
               <Col key={movie.imdbID} className="mb-4">
                 <MovieCard movie={movie} />
+                <HandleRemoveMovie
+                  movieWishList={movieWishList}
+                  setMovieWishList={setMovieWishList}
+                  handleOnClick={handleOnClick}
+                  imdbID={movie.imdbID}
+                />
               </Col>
             ))}
           </Row>
